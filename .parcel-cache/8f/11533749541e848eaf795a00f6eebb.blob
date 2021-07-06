@@ -1,0 +1,16 @@
+#list-container {
+  display: inline-flex;
+  margin: auto;
+  flex-flow: column nowrap;
+  font-size: 15pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 30px;
+}
+.item-container {
+  margin-top: 30px;
+  padding: 10px 40px 10px 40px;
+  border-radius: 20px;
+}
+.item-container:hover {
+  background-color: rgb(240, 240, 240);
+}

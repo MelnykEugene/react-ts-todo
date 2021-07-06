@@ -1,0 +1,67 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "List", function () {
+    return List;
+  });
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ItemItem = require("../Item/Item");
+  require("./List.css");
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/ODIN_todo_flattened/src/List/List.tsx", _s = $RefreshSig$();
+  const List = ({itemlist, itemChanger, itemRemover}) => {
+    _s();
+    const [inputText, setinputText] = _react.useState("");
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        id: "list-container",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 5
+        }
+      }, itemlist.map((item, i) => /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "item-container",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_ItemItem.Item, {
+        item: item,
+        itemChanger: itemChanger,
+        itemRemover: itemRemover,
+        key: item.id,
+        num: i + 1,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 11
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "item-container",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 7
+        }
+      }, "a"))
+    );
+  };
+  _s(List, "n3v3yvI/fhElQbg46WwWRJsy/CY=");
+  _c = List;
+  var _c;
+  $RefreshReg$(_c, "List");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

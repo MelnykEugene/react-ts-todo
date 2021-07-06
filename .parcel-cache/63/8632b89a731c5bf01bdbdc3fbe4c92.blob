@@ -1,0 +1,17 @@
+#list-container {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.item-content {
+  display: inline;
+}
+
+.item-button {
+  float: right;
+  height: 10px;
+  width: 10px;
+}
+
+/*# sourceMappingURL=index.HASH_REF_c9ac049fdd2c58501fed918ade9aa933.css.map */

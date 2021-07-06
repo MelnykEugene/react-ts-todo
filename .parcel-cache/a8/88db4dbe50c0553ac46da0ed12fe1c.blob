@@ -1,0 +1,87 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ItemItem = require("../Item/Item");
+  var _ItemItemDefault = _parcelHelpers.interopDefault(_ItemItem);
+  require("./List.css");
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/projects/todoapp/src/List/List.tsx", _s = $RefreshSig$();
+  function _extends() {
+    _extends = Object.assign || (function (target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    });
+    return _extends.apply(this, arguments);
+  }
+  const List = () => {
+    _s();
+    const [items, setItems] = _reactDefault.default.useState([{
+      id: 1,
+      content: "Go for a walk"
+    }, {
+      id: 2,
+      content: "Topology"
+    }, {
+      id: 3,
+      content: "FFC"
+    }, {
+      id: 4,
+      content: "Kaneki"
+    }, {
+      id: 5,
+      content: "Graduate Schhol"
+    }, {
+      id: 6,
+      content: "SHAD prep"
+    }]);
+    return items.map(item => {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "item-container",
+          __self: undefined,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 9
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_ItemItemDefault.default, _extends({}, item, {
+          __self: undefined,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18,
+            columnNumber: 11
+          }
+        })), /*#__PURE__*/_reactDefault.default.createElement("button", {
+          className: "item-button",
+          __self: undefined,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 11
+          }
+        })))
+      );
+    });
+  };
+  _s(List, "eonVXLea/r6KM0oEMjwHtFkuorM=");
+  _c = List;
+  exports.default = List;
+  var _c;
+  $RefreshReg$(_c, "List");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

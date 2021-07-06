@@ -1,0 +1,31 @@
+.item-input {
+  border: none;
+  border-bottom: 3px black solid;
+  outline: none;
+  background-color: transparent;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
+.item-input:hover {
+  border-bottom: 3px solid lawngreen;
+}
+.item-content {
+  display: inline;
+}
+.item-remove {
+  font-size: 20pt;
+  float: right;
+  height: 20px;
+  width: 20px;
+  border: none;
+}
+
+.item-remove:hover {
+  color: red;
+  scale: 1.1;
+}
+
+.item-content-completed {
+  text-decoration: line-through;
+}

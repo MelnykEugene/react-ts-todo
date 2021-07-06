@@ -1,0 +1,49 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "Item", function () {
+    return Item;
+  });
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require("./item.css");
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/ODIN_todo_flattened/src/Item/Item.tsx", _s = $RefreshSig$();
+  const Item = ({item, changer}) => {
+    _s();
+    const [textField, setTextfield] = _react.useState(item.content);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: item.completed ? "item-content-completed" : "item-content",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 5
+        }
+      }, item.id + " ", /*#__PURE__*/_reactDefault.default.createElement("input", {
+        className: "item-input",
+        value: item.content,
+        onChange: changer,
+        id: item.id.toString(),
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 7
+        }
+      }))
+    );
+  };
+  _s(Item, "Z+XpDem3962afu3lkycDSrxYXMQ=");
+  _c = Item;
+  var _c;
+  $RefreshReg$(_c, "Item");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,13 @@
+#list-container {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.item-content {
+  display: inline;
+}
+
+.item-button {
+}

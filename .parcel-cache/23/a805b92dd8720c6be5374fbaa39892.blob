@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+h1 {
+  font-weight: 300;
+  margin-left: 3rem;
+}
+
+ul {
+  margin-left: 20px;
+}
+li {
+  margin: 10px;
+}

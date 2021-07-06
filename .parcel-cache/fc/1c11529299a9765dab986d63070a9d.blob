@@ -1,0 +1,72 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "List", function () {
+    return List;
+  });
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ItemItem = require("../Item/Item");
+  require("./List.css");
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/ODIN_todo_flattened/src/List/List.tsx";
+  const List = ({itemlist, changer}) => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        id: "list-container",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 5
+        }
+      }, itemlist.map((item, i) => /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "item-container",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_ItemItem.Item, {
+        item: {
+          ...item,
+          id: i + 1
+        },
+        itemChanger: changer,
+        key: item.id,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 11
+        }
+      }))))
+    );
+  };
+  _c = List;
+  const AddItem = () => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "item-container",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 10
+        }
+      })
+    );
+  };
+  _c2 = AddItem;
+  var _c, _c2;
+  $RefreshReg$(_c, "List");
+  $RefreshReg$(_c2, "AddItem");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

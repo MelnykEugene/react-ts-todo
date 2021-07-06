@@ -1,0 +1,32 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/projects/todoapp/src/Item/Item.tsx";
+  const Item = ({post_date, content}) => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "item-content",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5,
+          columnNumber: 5
+        }
+      }, post_date + " ", content)
+    );
+  };
+  _c = Item;
+  exports.default = Item;
+  var _c;
+  $RefreshReg$(_c, "Item");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

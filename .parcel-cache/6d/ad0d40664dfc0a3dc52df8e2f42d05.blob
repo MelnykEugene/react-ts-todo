@@ -1,0 +1,59 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ItemItem = require("../Item/Item");
+  var _ItemItemDefault = _parcelHelpers.interopDefault(_ItemItem);
+  require("./List.css");
+  var _jsxFileName = "/Users/yevhenmelnyk/Desktop/workstudy/webdev/projects/toDo/src/List/List.tsx", _s = $RefreshSig$();
+  const List = () => {
+    _s();
+    const [items, setItems] = _reactDefault.default.useState([{
+      id: 1,
+      content: "Go for a walk"
+    }, "Topology", "FFC", "SHAD"]);
+    return items.map(item => {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "item-container",
+          __self: undefined,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15,
+            columnNumber: 9
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_ItemItemDefault.default, {
+          content: item,
+          __self: undefined,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16,
+            columnNumber: 11
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+          className: "item-button",
+          __self: undefined,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 11
+          }
+        })))
+      );
+    });
+  };
+  _s(List, "fHfE35/ILlDDD2GXs7fOOsWqPIo=");
+  _c = List;
+  exports.default = List;
+  var _c;
+  $RefreshReg$(_c, "List");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,10 @@
+#list-container {
+  margin: 0 auto;
+  width: 50%;
+}
+.item-content {
+  display: inline;
+}
+
+.item-button {
+}

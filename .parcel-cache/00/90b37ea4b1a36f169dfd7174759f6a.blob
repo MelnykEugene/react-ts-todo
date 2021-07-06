@@ -1,0 +1,163 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "App", function () {
+    return App;
+  });
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ListList = require("../List/List");
+  require("./App.css");
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/ODIN_todo_flattened/src/App/App.tsx", _s = $RefreshSig$();
+  function App() {
+    _s();
+    const list = [{
+      id: 1,
+      content: "Go for a walk",
+      date: new Date(),
+      completed: false,
+      workspace: "default"
+    }, {
+      id: 2,
+      content: "Topology",
+      date: new Date(),
+      completed: false,
+      workspace: "default"
+    }, {
+      id: 3,
+      content: "FFC",
+      date: new Date(),
+      completed: false,
+      workspace: "default"
+    }, {
+      id: 4,
+      content: "Kaneki",
+      date: new Date(),
+      completed: false,
+      workspace: "default"
+    }, {
+      id: 5,
+      content: "Graduate Schhol",
+      date: new Date(),
+      completed: false,
+      workspace: "default"
+    }, {
+      id: 6,
+      content: "SHAD prep",
+      date: new Date(),
+      completed: false,
+      workspace: "default"
+    }];
+    const [workspaces, setworkspaces] = _reactDefault.default.useState(["all", "thesis", "home", "work", "LeetCode"]);
+    const [workspace, setworkspace] = _reactDefault.default.useState("default");
+    const [items, setItems] = _reactDefault.default.useState(list);
+    const [darkmode, setDarkmode] = _reactDefault.default.useState(false);
+    const darkModeSwitch = () => {
+      setDarkmode(!darkmode);
+    };
+    const itemChanger = (todoitem, e) => {
+      let toChange = {
+        ...todoitem
+      };
+      let index = items.indexOf(todoitem);
+      console.log(e.currentTarget.value);
+      if (index === items.length - 1 && !e.currentTarget.value) setItems(items.slice(0, items.length - 1));
+      toChange.content = e.currentTarget.value;
+      let newList = items.slice(0, index);
+      newList.push(toChange);
+      const rest = items.slice(index + 1, items.length);
+      newList.push(...rest);
+      setItems(newList);
+    };
+    const itemRemover = toRemove => {
+      console.log(toRemove.id);
+      setItems(items.filter(item => item.id != toRemove.id));
+    };
+    const itemCompleter = todoitem => {
+      let toChange = {
+        ...todoitem
+      };
+      let index = items.indexOf(todoitem);
+      toChange.completed = !todoitem.completed;
+      let newList = items.slice(0, index);
+      newList.push(toChange);
+      const rest = items.slice(index + 1, items.length);
+      newList.push(...rest);
+      setItems(newList);
+    };
+    const itemAdder = () => {};
+    const filtered = items.filter(item => item.workspace === workspace);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: darkmode ? "expand overlay" : "overlay",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 116,
+          columnNumber: 7
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "dark-mode-button",
+        onClick: darkModeSwitch,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 117,
+          columnNumber: 7
+        }
+      }, "D"), /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121,
+          columnNumber: 7
+        }
+      }, "Workspace: ", workspace), /*#__PURE__*/_reactDefault.default.createElement("ul", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122,
+          columnNumber: 7
+        }
+      }, workspaces.map(workspace => /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124,
+          columnNumber: 11
+        }
+      }, workspace))), /*#__PURE__*/_reactDefault.default.createElement(_ListList.List, {
+        itemlist: filtered,
+        itemChanger: itemChanger,
+        itemRemover: itemRemover,
+        itemCompleter: itemCompleter,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 128,
+          columnNumber: 7
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: darkmode ? "footer footer-dark" : " footer",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 134,
+          columnNumber: 7
+        }
+      }, "Yevhen Melnyk, 2021"))
+    );
+  }
+  _s(App, "fRmEt6NIHXC9aMVSFsx+Mzt4iQ4=");
+  _c = App;
+  var _c;
+  $RefreshReg$(_c, "App");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

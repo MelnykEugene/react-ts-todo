@@ -1,0 +1,32 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = require("react");
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactDom = require("react-dom");
+  var _reactDomDefault = _parcelHelpers.interopDefault(_reactDom);
+  var _AppApp = require("./App/App");
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/ODIN_todo_flattened/src/index.tsx";
+  _reactDomDefault.default.render(/*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.StrictMode, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 3
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_AppApp.App, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 5
+    }
+  })), document.getElementById("root"));
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

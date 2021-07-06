@@ -1,0 +1,25 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _s = $RefreshSig$();
+  const List = props => {
+    _s();
+    const [setItems, Array] = _reactDefault.default.useState([]);
+    return items.map(item => {});
+  };
+  _s(List, "y4Imjtmr2qFVokISAUFLn67XmAY=");
+  _c = List;
+  exports.default = List;
+  var _c;
+  $RefreshReg$(_c, "List");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

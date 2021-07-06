@@ -1,0 +1,16 @@
+#list-container {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.item-content {
+  display: inline;
+}
+
+.item-button {
+  float: right;
+  height: 10px;
+  width: 10px;
+  border: nones;
+}

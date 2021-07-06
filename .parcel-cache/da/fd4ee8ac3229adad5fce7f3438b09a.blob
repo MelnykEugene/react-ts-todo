@@ -1,0 +1,37 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ListItemListItem = require("../ListItem/ListItem");
+  var _jsxFileName = "/Users/yevhenmelnyk/Desktop/workstudy/webdev/projects/toDo/src/List/List.tsx", _s = $RefreshSig$();
+  const List = props => {
+    _s();
+    const [items, setItems] = _reactDefault.default.useState([1, 2, 3]);
+    return items.map(item => {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement(_ListItemListItem.ListItem, {
+          __self: undefined,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 7,
+            columnNumber: 12
+          }
+        })
+      );
+    });
+  };
+  _s(List, "0LjImy/To9c7Dq8NNb9PNWduvhU=");
+  _c = List;
+  exports.default = List;
+  var _c;
+  $RefreshReg$(_c, "List");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

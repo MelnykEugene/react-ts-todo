@@ -2,9 +2,10 @@
   "name": "todo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/public/index.html",
+    "build": "parcel build src/public/index.html"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "@types/node": "^15.0.2",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.3",
+    "parcel": "*",
     "typescript": "^4.2.4"
   }
 }

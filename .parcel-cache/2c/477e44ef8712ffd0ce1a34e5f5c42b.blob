@@ -1,0 +1,12 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _s = $RefreshSig$();
+const List = () => {
+  _s();
+  [setItems, items] = useState([]);
+};
+_s(List, "4bWmwqNpSmwrWYwBxf0uO8LDcFo=");
+_c = List;
+exports.default = List;
+var _c;
+$RefreshReg$(_c, "List");

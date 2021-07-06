@@ -1,0 +1,44 @@
+.item-input {
+  border: none;
+  border-bottom: 3px black solid;
+  outline: none;
+  background-color: transparent;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
+.item-input:hover {
+  border-bottom: 3px solid lawngreen;
+}
+.item-content {
+  display: inline;
+}
+.item-remove {
+  font-size: 20pt;
+  float: right;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.item-remove:hover {
+  color: red;
+}
+
+.item-content-completed {
+  text-decoration: line-through;
+}
+.item-complete {
+  font-size: 20pt;
+  float: right;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+}
+.item-complete;
+hover {
+  color: lime;
+  scale: 1;
+}

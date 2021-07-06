@@ -1,0 +1,71 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "Item", function () {
+    return Item;
+  });
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require("./Item.css");
+  var _jsxFileName = "/Users/yevhenmelnyk/Documents/webdev/ODIN_todo_flattened/src/Item/Item.tsx", _s = $RefreshSig$();
+  const Item = ({item, itemChanger, itemRemover, num, itemCompleter}) => {
+    _s();
+    const [textField, setTextfield] = _react.useState(item.content);
+    const fieldChange = e => {
+      setTextfield(e.target.value);
+      itemChanger(item, e);
+    };
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 5
+        }
+      }, num + " ", /*#__PURE__*/_reactDefault.default.createElement("input", {
+        className: item.completed ? "item-input item-content-complete" : "item-input",
+        value: textField,
+        onChange: fieldChange,
+        id: item.id.toString(),
+        spellCheck: "false",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 7
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "item-remove",
+        onClick: () => itemRemover(item),
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 7
+        }
+      }, "X"), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "item-completer",
+        onClick: () => itemCompleter(item),
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 7
+        }
+      }, "✓"))
+    );
+  };
+  _s(Item, "Z+XpDem3962afu3lkycDSrxYXMQ=");
+  _c = Item;
+  var _c;
+  $RefreshReg$(_c, "Item");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
